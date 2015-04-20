@@ -1,0 +1,253 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/P1_Plus1"
+        android:layout_below="@+id/P1LifeCount"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/P1_Minus1"
+        android:layout_above="@+id/P1_Plus5"
+        android:layout_toRightOf="@+id/P1_Plus1"
+        android:layout_toEndOf="@+id/P1_Plus1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+5"
+        android:id="@+id/P1_Plus5"
+        android:layout_below="@+id/P1_Plus1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-5"
+        android:id="@+id/P1_Minus5"
+        android:layout_alignTop="@+id/P1_Plus5"
+        android:layout_toRightOf="@+id/P1_Plus5"
+        android:layout_toEndOf="@+id/P1_Plus5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="P1 Total"
+        android:id="@+id/P1Label"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Life Count"
+        android:id="@+id/P1LifeCount"
+        android:layout_below="@+id/P1Label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="P2 Total"
+        android:id="@+id/P2Label"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Life Count"
+        android:id="@+id/P2LifeCount"
+        android:layout_below="@+id/P2Label"
+        android:layout_alignLeft="@+id/P2Label"
+        android:layout_alignStart="@+id/P2Label" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/P2_Plus1"
+        android:layout_alignTop="@+id/P2Minus1"
+        android:layout_alignLeft="@+id/P2LifeCount"
+        android:layout_alignStart="@+id/P2LifeCount" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/P2Minus1"
+        android:layout_above="@+id/P2Minus5"
+        android:layout_toRightOf="@+id/P2_Plus1"
+        android:layout_toEndOf="@+id/P2_Plus1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-5"
+        android:id="@+id/P2Minus5"
+        android:layout_alignTop="@+id/P2Plus5"
+        android:layout_toRightOf="@+id/P2_Plus1"
+        android:layout_toEndOf="@+id/P2_Plus1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+5"
+        android:id="@+id/P2Plus5"
+        android:layout_below="@+id/P1_Minus1"
+        android:layout_toLeftOf="@+id/P2Minus5"
+        android:layout_toStartOf="@+id/P2Minus5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="P3 Total"
+        android:id="@+id/P3Label"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/P3_Plus1"
+        android:layout_alignStart="@+id/P3_Plus1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Life Count"
+        android:id="@+id/P3LifeCounter"
+        android:layout_above="@+id/P3_Minus1"
+        android:layout_alignRight="@+id/P3Label"
+        android:layout_alignEnd="@+id/P3Label" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/P3_Plus1"
+        android:layout_below="@+id/P3LifeCounter"
+        android:layout_alignLeft="@+id/P3_Plus5"
+        android:layout_alignStart="@+id/P3_Plus5" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/P3_Minus1"
+        android:layout_above="@+id/P3_Minus5"
+        android:layout_alignLeft="@+id/P3_Minus5"
+        android:layout_alignStart="@+id/P3_Minus5" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+5"
+        android:id="@+id/P3_Plus5"
+        android:layout_below="@+id/P2Minus1"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-5"
+        android:id="@+id/P3_Minus5"
+        android:layout_alignTop="@+id/P3_Plus5"
+        android:layout_toRightOf="@+id/P3_Plus1"
+        android:layout_toEndOf="@+id/P3_Plus1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="P4 Total"
+        android:id="@+id/P4Label"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/P4_Minus1"
+        android:layout_alignEnd="@+id/P4_Minus1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Life Count"
+        android:id="@+id/P4LifeCounter"
+        android:layout_below="@+id/P4Label"
+        android:layout_alignLeft="@+id/P4Label"
+        android:layout_alignStart="@+id/P4Label" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/P4_Minus1"
+        android:layout_alignTop="@+id/P4_Plus1"
+        android:layout_toRightOf="@+id/P4_Plus5"
+        android:layout_toEndOf="@+id/P4_Plus5" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/P4_Plus1"
+        android:layout_below="@+id/P4LifeCounter"
+        android:layout_toLeftOf="@+id/P4_Minus1"
+        android:layout_toStartOf="@+id/P4_Minus1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-5"
+        android:id="@+id/P4_Minus5"
+        android:layout_below="@+id/P3_Minus1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+5"
+        android:id="@+id/P4_Plus5"
+        android:layout_alignBottom="@+id/P4_Minus5"
+        android:layout_toLeftOf="@+id/P4_Minus5"
+        android:layout_toStartOf="@+id/P4_Minus5" />
+
+</RelativeLayout>
